@@ -1,1 +1,1 @@
-# subrem
+This project aims to remind about subspription in the different ways
