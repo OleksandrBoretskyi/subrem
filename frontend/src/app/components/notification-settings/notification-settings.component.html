@@ -1,1 +1,8 @@
-<p>notification-settings works!</p>
+
+<div class="notification-settings">
+  <h2 class="neon">Notification Settings</h2>
+  <label>
+    <input type="checkbox" [(ngModel)]="enableNotifications" (change)="toggleNotifications()">
+    Enable Notifications
+  </label>
+</div>

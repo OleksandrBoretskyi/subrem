@@ -1,1 +1,9 @@
-<p>list works!</p>
+
+<div class="subscription-list">
+  <h2 class="neon">My Subscriptions</h2>
+  <div *ngFor="let subscription of subscriptions" class="subscription-card" [class.urgent]="subscription.isUrgent">
+    <h3>{{ subscription.name }}</h3>
+    <p>Next Payment: {{ subscription.nextPayment | date }}</p>
+    <button (click)="markAsDone(subscription)">Mark as Done</button>
+  </div>
+</div>

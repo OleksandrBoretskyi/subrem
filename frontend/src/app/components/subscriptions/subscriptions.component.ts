@@ -1,13 +1,16 @@
+
 import { Component } from '@angular/core';
+import { ListComponent } from '../list/list.component';
 
 @Component({
   selector: 'app-subscriptions',
-  standalone: true,
-  imports: [],
   templateUrl: './subscriptions.component.html',
-  styleUrl: './subscriptions.component.css',
-  template: `<h1>Subscriptions</h1>`,
+  styleUrls: ['./subscriptions.component.css'],
+  standalone: true,
+  imports: [
+    ListComponent
+  ]
 })
 export class SubscriptionsComponent {
-
+  viewDate: Date = new Date();
 }

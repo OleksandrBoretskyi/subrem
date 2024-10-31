@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-color: #f5f7fa;
+    --background-dark: #1a1a1d;
+    --primary-color: #333;
+    --text-light: #e0e0e0;
+    --highlight-color: #6c63ff;
+    --highlight-accent: rgba(108, 99, 255, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1, h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: var(--background-dark);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    margin-bottom: 20px;
+    color: var(--text-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    background-color: var(--highlight-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(108, 99, 255, 0.8);
+  }
+  
+  .neon {
+    color: var(--highlight-color);
+    text-shadow: 0 0 4px var(--highlight-color), 0 0 8px var(--highlight-color);
+  }
